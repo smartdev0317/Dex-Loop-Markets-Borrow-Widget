@@ -1,0 +1,202 @@
+:root {
+    --mid-gray-color: #1B1B1B;
+    --second-bg-color: #131313;
+    --dark-gray-color: #2D2D2D;
+  
+    --main-font-color: #FFFFFF;
+    --blue-font-color: #9BB0CF;
+    --gray-font-color: #919191;
+    --cyan-font-color: #01CDFD;
+    --magenta-color: #C83E93;
+    --green-color: #32FE9A;
+}
+
+.p {
+    cursor: default;
+}
+
+.connect-wallet-button {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 5px 15px !important;
+    color: var(--main-font-color);
+    width: 203px !important;
+    height: 34px !important;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+
+    width: 102px;
+    height: 18px;
+    left: 15px;
+    top: 8px;
+
+    background: var(--mid-gray-color);
+    border-radius: 5px !important;
+}
+
+.connect-wallet-button.inactive {
+    background-color: var(--magenta-color);
+}
+
+.select-token-button {
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--mid-gray-color);
+    border-top-left-radius: 6px;
+    border: none;
+    padding: 8px 4px;
+    height: 100%;
+    width: 120px;
+    min-width: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: inherit;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.select-token-button:hover {
+    opacity: 0.8;
+}
+
+.percent-button {
+    background: var(--dark-gray-color);
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin: 0px 1px;
+    font-size: 13px;
+    line-height: 15px;
+    border: none;
+    color: var(--blue-font-color);
+    cursor: pointer;
+}
+
+/* .percent-button-active {
+    width: 27.5px;
+    height: 15px;
+    background: var(--second-bg-color);
+    border-radius: 5px;
+    padding: 1px 3px;
+    font-size: 10px;
+    line-height: 15px;
+    border: none;
+    color: var(--blue-font-color);
+    box-shadow: 0px 0px 1px var(--cyan-font-color);
+} */
+
+.percent-button:active {
+    background: var(--second-bg-color);
+}
+
+.percent-button:hover {
+    box-shadow: 0px 0px 3px var(--blue-font-color);
+}
+
+.swap-button {
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 42px;
+    color: var(--mid-gray-color);
+    border-radius: 10px;
+    background-color: var(--green-color);
+    margin-top: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Lexend';
+    cursor: pointer;
+}
+.swap-button:hover {
+  box-shadow: 0px 0px 4px var(--gray-color);
+}
+
+.swap-button:disabled {
+    opacity: 0.3;
+    background-color: var(--gray-font-color);
+    cursor: default;
+}
+
+.slippage-input {
+    background: var(--second-bg-color);
+    border-radius: 5px;
+    font-size: 12px;
+    color: #BBBBBB;
+    padding: 3px 4px;
+    padding-right: 16px;
+    border: none;
+    max-width: 35px;
+    text-align: right;
+}
+
+.slippage-input:after {
+    content: '%';
+    color: #BBBBBB;
+    position: absolute;
+    left: 0;
+}
+
+.slippage-input:focus {
+    outline: none;
+}
+
+.search-input {
+    width: calc(100% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+    background: var(--mid-gray-color);
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    color: var(--gray-font-color);
+    padding-left: 15px;
+    padding-right: 40px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    background: none;
+    border: none;
+}
+
+.token-amount-input {
+    font-size: 19px;
+    line-height: 24px;
+    color: var(--cyan-color);
+    margin: 2px 0px 0px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: right;
+}
+
+.token-amount-input:focus {
+    outline: none;
+}
+
+.repay-max-link {
+    text-align: right;
+}
+
+.repay-button {
+    border: 1.5px solid #32FE9A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px 10px;
+}

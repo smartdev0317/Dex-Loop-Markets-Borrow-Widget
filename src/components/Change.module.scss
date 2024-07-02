@@ -1,0 +1,38 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.flex {
+  @include flex(flex-start);
+}
+
+.customChange {
+  @include flex(flex-start);
+}
+
+// @media (max-width: 460px) {
+//   .customChange {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//   }
+// }
+
+.change {
+  font-size: 16px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+.up {
+  color: $aqua;
+}
+
+.down {
+  color: $red;
+}

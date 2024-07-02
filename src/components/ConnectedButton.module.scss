@@ -1,0 +1,18 @@
+@import "../styles/mixins";
+
+.connected {
+  @include flex(center, stretch);
+  border-width: 1px;
+  color: $white;
+
+  > * {
+    @include flex;
+  }
+}
+
+.balance {
+  border-left: 1px solid fade-out($theme_black_border_color, 0.9);
+  color: $white;
+  margin-left: 10px;
+  padding-left: 10px;
+}
